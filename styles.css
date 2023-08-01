@@ -1,0 +1,157 @@
+/*
+
+#0d2b45
+#203c56
+#544e68
+#8d697a
+#d08159
+#ffaa5e
+#ffd4a3
+#ffecd6
+
+ */
+
+html {
+    background-image: url("assets/wallpaper.png");
+    background-size: cover;
+    font-family: monospace;
+
+    /* Firefox */
+    image-rendering: -moz-crisp-edges;
+    /* Opera */
+    image-rendering: -o-crisp-edges;
+    /* Webkit (non-standard naming) */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    /* IE (non-standard property) */
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+#MainMenu {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    right: 25%;
+    bottom: 30%;
+    background: #203c56;
+    border: black 5px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#PlayButton {
+    background-image: url("assets/playbutton.png");
+    width: 64px;
+    height: 64px;
+    background-size: 64px 64px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#PlayButton:active {
+    scale: 0.95;
+}
+
+.Header {
+    color: #ffecd6;
+    font-size: 300%;
+    margin-top: 15px;
+}
+
+#HighscoreText {
+    color: #ffd4a3;
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    margin: 0 0 7px;
+    height: 64px;
+    font-size: 64px;
+}
+
+.trophy {
+    position: absolute;
+    width: 64px;
+    height: 75px;
+    left: 10px;
+    bottom: 10px;
+    transition: all;
+}
+
+.trophy:hover {
+    scale: 1.05;
+    transform: rotate(5deg);
+}
+
+.tutorial-text {
+    color: #ffd4a3;
+    position: absolute;
+    top: 90px;
+    bottom: 100px;
+    left: 15px;
+    right: 15px;
+    font-size: x-large;
+}
+
+.image-number {
+    height: 32px;
+    transition: height 0.1s;
+    margin: 5px;
+}
+
+.Full {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+}
+
+.duck {
+    transition: all 0.1s;
+}
+
+.duck:hover {
+    width: 250px;
+    height: 250px;
+}
+
+#ScoreTextBackground {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #0d2b45;
+}
+
+#TimerTextBackground {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #0d2b45;
+}
+
+#GameOverPanel {
+    position: absolute;
+    left: 40%; right: 40%;
+    top: 15%; bottom: 15%;
+    background-color: #0d2b45;
+    border: black 5px solid;
+}
+
+.fill-h1 {
+    text-align: center;
+    font-size: 500%;
+    margin-top: 10px;
+    color: #ffd4a3;
+}
+
+.centered-text {
+    text-align: center;
+    color: #ffd4a3;
+    margin: 10px;
+}
